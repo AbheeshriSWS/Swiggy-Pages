@@ -43,7 +43,7 @@ header {
 }
 
 nav {
-    padding: 32px;
+    padding: 32px 22px 32px 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -54,17 +54,20 @@ nav {
     color: #02060CBF;
     font-weight: 600;
     padding: 8px;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.8px;
     line-height: 24px;
     font-size: 18px;
     position: relative;
     transition-timing-function:  0.3s cubic-bezier(.58,.3,.005,1);
 }
 
+.nav-icons ul li:first-child a {
+    padding-left: 0;
+}
+
 .nav-icons ul {
     display: flex;
     flex-wrap: wrap;
-    padding-inline: 5px;
     align-items: center;
     justify-content: center;
 }
@@ -73,6 +76,7 @@ nav {
     height: 1em;
     width: 1em;
     vertical-align: text-top;
+    margin-left: 5px;
 }
 
 .nav-icons ul li a:hover {
@@ -105,16 +109,34 @@ nav {
     max-width: 1155px;
     margin: 0 auto;
     padding-top: 65px;
+    position: relative;
 }       
+
+.left-arrow-img {
+    top: 33px;
+    bottom: 0;
+    left: 0px;
+    position: absolute;
+    right: 0;
+    margin-left: -100px;
+}
+
+.right-arrow-img {
+    top: 50px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    margin-right: -95px;
+}
 
 .about-head h2 {
     font-size: 40px;
     font-weight: 900;
-    letter-spacing: 0.03px;
+    letter-spacing: -1px;
     color: #02060C;
     text-transform: uppercase;
     line-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .about-head p {
@@ -168,4 +190,141 @@ nav {
     align-items: center;
     grid-gap: 200px;
     margin-top: 15px;
+}
+
+/* IPO */
+
+.ipo-row {
+    padding-block: 90px;
+}
+
+.ipo-head h2 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: #02060CBF;
+    text-align: center;
+    position: relative;
+}
+
+.ipo-head h2:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 32px;
+    height: 2px;
+    background: #FF5200;
+    left: 23%;
+}
+
+.ipo-head h2:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 32px;
+    height: 2px;
+    background: #FF5200;
+    right: 23%;
+}
+
+.ipo-video-section {
+    margin: auto;
+    max-width: 800px;
+    padding-top: 75px;
+}
+
+.ipo-video-section video {
+    max-width: 800px;
+    width: 100%;    
+    min-height: 350px;
+    margin: auto;
+    border-radius: 45px;
+}
+
+/* get to know us */
+
+.know-row {
+    padding-block: 40px;
+}
+
+.know-head h2{
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: #02060CBF;
+    text-align: center;
+    position: relative;
+}
+
+.know-head h2:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 70px;
+    height: 2px;
+    background: #FF5200;
+    left: 32%;
+}
+
+.know-head h2:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 70px;
+    height: 2px;
+    background: #FF5200;
+    right: 32%;
+}
+
+.know-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.know-tabs {
+    display: grid;
+}
+
+.tab span {
+    font-size: 22px;
+    color: #02060C4D;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.55px;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    color: #02060C4D;
+}
+
+.tab:not(:last-child) {
+    border-bottom: 1px solid #02060C26;
+}
+
+.know-para p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.03px;
+    color: #02060C99;
+    max-width: 480px;
+}
+
+.know-tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
