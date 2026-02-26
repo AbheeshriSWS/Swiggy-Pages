@@ -63,6 +63,20 @@ nav {
 
 .nav-icons ul li:first-child a {
     padding-left: 0;
+    color: #FF5200;
+}
+
+.nav-icons ul li:first-child a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: #FF5200;
+    height: 4px;
+    width: 25px;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 0;
+    border-radius: 15px;
 }
 
 .nav-icons ul {
@@ -475,6 +489,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-block: 53px;
+    grid-gap: 35px;
 }
 
 .industry-image div:hover img{
@@ -1316,14 +1331,6 @@ nav {
     padding-bottom: 35px;
 }
 
-.left-arrow{
-    background-color: rgb(236 236 237);
-}
-
-.left-arrow svg {
-    opacity: 0.5;
-}
-
 .nav-logo-dropdown a span {
     letter-spacing: -0.1px;
     line-height: 21px;
@@ -1381,4 +1388,50 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 24px;
+}
+
+.footer-ul ul li:first-child {
+    padding-top: 0;
+}
+
+/* dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  font-weight: 300;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #FFFFFF;
+}
+
+.dropdown:hover .dropbtnn {
+  background-color: #FFFFFF;
+}
+
+.dropdown-content a:hover::after {
+  display: none !important;
+}
+
+.dropdown-content a {
+  font-weight: 300;
+  white-space: nowrap;
 }
