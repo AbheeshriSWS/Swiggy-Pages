@@ -1159,12 +1159,17 @@ nav {
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.8px;
     color: #02060C73;
 }
 
 .email{
     color: #02060c73;
+    transition: 0.3s;
+}
+
+.email:hover{
+    color: #FF5200;
 }
 
 .touch-row {
@@ -1175,6 +1180,8 @@ nav {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 140px;
+    padding-top: 40px;
 }
 
 .touch-text {
@@ -1183,21 +1190,214 @@ nav {
 }
 
 .map iframe {
-    border-radius: 40px;
+    border-radius: 32px;
     height: 100%;
     width: 100%;
+    display: block;
 }
 
 .map {
     aspect-ratio: 555 / 355;
     max-width: 555px;
     width: 100%;
-    position: relative;
     overflow: hidden;
-    border: 1px solid rgb(229, 227, 223);
-    border-radius: 40px;
+    border: 1px solid #02060C26;
+    border-radius: 32px;
 }
 
-.touch-map, .touch-text{
-    width: 50%;
+.touch-map {
+    flex: 0 0 555px;
+}
+
+/* footer */
+
+/* footer */
+
+.footer-wrapper{
+    background-color: rgb(240, 240, 245);
+}
+
+.footer-head {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.footer-head-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    padding: 33px 0 85px 0;
+    position: relative;
+}
+
+/* .footer-head-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    height: 1px;
+    top: 0;
+} */
+
+.footer-head-content h4 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 26px;
+    color: rgba(2, 6, 12, 0.75);
+    letter-spacing: -0.6px;
+    white-space: nowrap;
+}
+
+.footer-head-content img {
+    max-width: 208px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 14.2%;
+    padding: 0px 14% 2%;
+}
+
+.footer-main ul li{
+    padding: 8px 15px 8px 0;
+}
+/* .footer-main ul li {
+    padding: 8px 40px 8px 0;
+}
+
+.padding-right-15 li{
+    padding-right: 15px !important;
+}
+
+.padding-right-8 li{
+    padding-right: 8px !important;
+} */
+
+.footer-main ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.4px;
+    color: rgba(2, 6, 12, 0.6);
+}
+
+.ul-head {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: rgba(2, 6, 12, 0.92);
+    letter-spacing: -0.45px;
+}
+
+.white-space-nowrap li{
+    white-space: nowrap;
+}
+.nested-list {
+    display: grid;
+    grid-gap: 13vw;
+}
+
+.socia-icons li a img {
+    width: 16px;
+    height: 18px;
+    object-fit: contain;
+}
+
+
+.socia-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.city-container {
+    margin-left: calc(15% - 16px);
+    margin-right: calc(15% - 16px);
+    padding-inline: 10px;
+}
+
+.hr-tag {
+    border: 1px solid rgba(2, 6, 12, 0.1);
+    margin: 32px calc(7% + 52px);
+}
+
+.margin-custom {
+    margin: 32px calc(7% + 52px) 15px !important;
+}
+
+.place-wrapper {
+    padding-bottom: 35px;
+}
+
+.left-arrow{
+    background-color: rgb(236 236 237);
+}
+
+.left-arrow svg {
+    opacity: 0.5;
+}
+
+.nav-logo-dropdown a span {
+    letter-spacing: -0.1px;
+    line-height: 21px;
+}
+
+.text-slider-content-imgs {
+    padding-top: 8px;
+}
+
+.hr-tag-footer {
+    max-width: 1080px;
+    margin: auto;
+    background-color: rgba(2, 6, 12, 0.75);
+}
+
+.footer-uls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+}
+
+/* .footer-ul {
+    margin-right: 42px;
+} */
+
+.footer-ul:last-child {
+    margin-right: 0;
+}
+
+.logo-img{
+    display: inline-block;
+}
+
+.logo-img span {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: rgba(2, 6, 12, 0.6);
+    letter-spacing: -0.5px;
+    font-size: 16px;
+}
+
+/* .width-85{
+    width: 85% !important;
+}
+
+.width-115{
+    width: 115% !important;
+} */
+
+.margin-6030{
+    margin: 6px 0 3px 0;
+}
+
+.margin-left-15{
+    margin-left: 15px;
 }
