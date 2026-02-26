@@ -1215,18 +1215,18 @@ nav {
     background-color: rgb(240, 240, 245);
 }
 
-.footer-head {
+/* .footer-head {
     max-width: 990px;
     margin: 0 auto;
-}
+} */
 
 .footer-head-content {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    grid-gap: 20px;
-    padding: 33px 0 85px 0;
+    grid-gap: 55px;
+    padding-block: 33px;
     position: relative;
 }
 
@@ -1250,7 +1250,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 4fr;
     column-gap: 14.2%;
-    padding: 0px 14% 2%;
+    padding-block: 50px;
 }
 
 .footer-main ul li{
@@ -1259,7 +1259,7 @@ nav {
 
 .footer-main ul li a {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 19px;
     letter-spacing: -0.4px;
     color: rgba(2, 6, 12, 0.6);
@@ -1276,10 +1276,12 @@ nav {
 .white-space-nowrap li{
     white-space: nowrap;
 }
+
+/* 
 .nested-list {
     display: grid;
     grid-gap: 13vw;
-}
+} */
 
 .socia-icons li a img {
     width: 16px;
@@ -1332,9 +1334,9 @@ nav {
 }
 
 .hr-tag-footer {
-    max-width: 1080px;
     margin: auto;
     background-color: rgba(2, 6, 12, 0.75);
+    margin-inline: -70px;
 }
 
 .footer-uls {
@@ -1354,7 +1356,7 @@ nav {
 .logo-img span {
     display: inline-block;
     margin-top: 15px;
-    font-weight: 500;
+    font-weight: 300;
     color: rgba(2, 6, 12, 0.6);
     letter-spacing: -0.5px;
     font-size: 16px;
@@ -1366,4 +1368,17 @@ nav {
 
 .margin-left-15{
     margin-left: 15px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding-inline: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
