@@ -1109,3 +1109,95 @@ nav {
     display: grid;
     grid-gap: 15px;
 }
+
+/* touch */
+
+
+.touch-head h2{
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: #02060CBF;
+    text-align: center;
+    position: relative;
+}
+
+.touch-head h2:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 80px;
+    height: 2px;
+    background: #FF5200;
+    left: 24%;
+}
+
+.touch-head h2:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 80px;
+    height: 2px;
+    background: #FF5200;
+    right: 24%;
+}
+
+.touch-sub-text h2{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.55px;
+    color: #02060CBF;
+    margin-bottom: 10px;
+}
+
+.touch-sub-text p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    color: #02060C73;
+}
+
+.email{
+    color: #02060c73;
+}
+
+.touch-row {
+    padding-block: 80px;
+}
+
+.touch-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.touch-text {
+    display: grid;
+    grid-gap: 70px;
+}
+
+.map iframe {
+    border-radius: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.map {
+    aspect-ratio: 555 / 355;
+    max-width: 555px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgb(229, 227, 223);
+    border-radius: 40px;
+}
+
+.touch-map, .touch-text{
+    width: 50%;
+}
